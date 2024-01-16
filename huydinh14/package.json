@@ -1,0 +1,52 @@
+{
+  "name": "huydinh14",
+  "version": "0.7.2",
+  "private": true,
+  "license": "MIT",
+  "author": "huydinh14",
+  "type": "commonjs",
+  "description": "huydinh14",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "prepare": "husky install",
+    "lint": "eslint --fix",
+    "fix": "npm run lint"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,jsx,scss}": [
+      "prettier --write"
+    ],
+    "*.{js,ts,tsx,jsx}": [
+      "eslint --fix"
+    ]
+  },
+  "dependencies": {
+    "@nextui-org/react": "^2.2.9",
+    "next": "14.0.4",
+    "framer-motion": "^10.17.9",
+    "next-themes": "^0.2.1",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "dayjs": "^1.11.10",
+    "encoding": "^0.1.13",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "postcss": "^8",
+    "prettier": "3.1.1",
+    "sass": "^1.69.5",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  }
+}
