@@ -17,7 +17,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #f2f2f2;
+  background-color: #1e2128;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
@@ -27,12 +27,9 @@ body {
   line-height: 1.75;
   font-weight: 400;
   letter-spacing: 0;
-  font-style: normal;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
+  font-family: -apple-system, "Noto Sans", Noto, "Liberation Sans", Roboto,
+    BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
   -webkit-font-smoothing: antialiased;
 }
 

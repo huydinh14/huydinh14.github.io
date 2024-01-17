@@ -1,8 +1,25 @@
-const Home: React.FC<Props> = () => {
+import { FC } from "react";
+import {
+  Education,
+  Experience,
+  Header,
+  Info,
+  Projects,
+  TeckStack,
+} from "./components";
+
+const Home: FC<Props> = () => {
   return (
-    <div className="w-full h-screen flex items-center text-5xl justify-center bg-white">
-      <p>Hi, I&lsquo;M HUY DINH</p>
-    </div>
+    <>
+      <div className="w-full min-h-screen py-2 px-12">
+        <Header />
+        <Info />
+        <TeckStack />
+        <Education />
+        <Experience />
+        <Projects />
+      </div>
+    </>
   );
 };
 
