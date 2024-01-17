@@ -8,7 +8,7 @@ const Info: FC<Props> = () => {
         <div className="w-full flex gap-5">
           <div className="avatar w-[122px] h-[122px] overflow-hidden rounded-full flex justify-center items-start">
             <Image
-              src="/images/avatar1.jpg"
+              src="/images/avatar.jpg"
               className="scale-125"
               width={98}
               alt="Avatar huydinh14"
@@ -20,7 +20,7 @@ const Info: FC<Props> = () => {
           </div>
         </div>
         <div className="w-full info font-normal text-md flex flex-col gap-1.5 items-end text-backBlur">
-          <p className="text-backBlur dark:text-white">Tháng 3 Năm 2001</p>
+          <p className="text-backBlur dark:text-white cursor-pointer">Tháng 3 Năm 2001</p>
           <Link
             isExternal
             href="tel:+84335293294"

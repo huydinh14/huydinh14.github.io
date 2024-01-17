@@ -43,9 +43,9 @@ const Header: React.FC<Props> = (props) => {
           className={slots.wrapper({
             color: "default",
             class: [
-              "w-8 h-8 p-4 font-semibold text-sm",
+              "w-8 h-8 p-[18px] font-semibold text-sm",
               "flex items-center justify-center",
-              "rounded-lg bg-default-100 hover:bg-default-200",
+              "rounded-lg bg-default-200 hover:bg-default-300",
             ],
           })}
         >

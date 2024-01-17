@@ -5,6 +5,7 @@ export interface TechType {
     {
         id: string,
         name: string,
+        isMain: boolean
     }[]
 
 }

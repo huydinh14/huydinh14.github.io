@@ -2,63 +2,75 @@ import { TechType } from "./types";
 
 export const teckStack: TechType[] = [
     {
-        id:"BE",
-        type: "Back End",
-        tech: [
-            {
-                id: "1",
-                name: "C#"
-            },
-            {
-                id: "2",
-                name: ".NET"
-            },
-            {
-                id: "3",
-                name: ".NET CORE"
-            },
-            {
-                id: "4",
-                name: "JS"
-            },
-            {
-                id: "5",
-                name: "NodeJS"
-            }
-        ]
-    },
-    {
         id: "FE",
         type: "Front End",
         tech: [
             {
+                id: "1",
+                name: "HTML",
+                isMain: true
+            },
+            {
+                id: "2",
+                name: "CSS",
+                isMain: true
+            },
+            {
+                id: "3",
+                name: "JavaScript",
+                isMain: true
+            },
+            {
+                id: "4",
+                name: "ReactJs",
+                isMain: true
+            },
+            {
+                id: "5",
+                name: "NextJs",
+                isMain: true
+            },
+            {
                 id: "6",
-                name: "ReactJs"
+                name: "SASS",
+                isMain: true
             },
             {
                 id: "7",
-                name: "NextJs"
+                name: "Tailwind CSS",
+                isMain: true
             },
             {
                 id: "8",
-                name: "SASS"
+                name: "TypeScript",
+                isMain: true
+            },
+        ]
+    },
+    {
+        id: "BE",
+        type: "Back End",
+        tech: [
+            {
+                id: "1",
+                name: "C#",
+                isMain: true
             },
             {
-                id: "9",
-                name: "Tailwind CSS"
+                id: "2",
+                name: ".NET",
+                isMain: true
             },
             {
-                id: "9",
-                name: "Tailwind CSS"
+                id: "3",
+                name: ".NET CORE",
+                isMain: true
             },
             {
-                id: "9",
-                name: "Tailwind CSS"
-            },
-            {
-                id: "9",
-                name: "Tailwind CSS"
-            },
+                id: "4",
+                name: "NodeJS",
+                isMain: false
+            }
         ]
     },
     {
@@ -66,12 +78,14 @@ export const teckStack: TechType[] = [
         type: "DataBase",
         tech: [
             {
-                id: "10",
-                name: "MSSQL"
+                id: "1",
+                name: "MSSQL",
+                isMain: true
             },
             {
-                id: "11",
-                name: "MongoDB"
+                id: "2",
+                name: "MongoDB",
+                isMain: false
             }
         ]
     },
@@ -80,12 +94,14 @@ export const teckStack: TechType[] = [
         type: "Git",
         tech: [
             {
-                id: "12",
-                name: "Github"
+                id: "1",
+                name: "Github",
+                isMain: true
             },
             {
-                id: "13",
-                name: "Bitbucket"
+                id: "2",
+                name: "Bitbucket",
+                isMain: false
             }
         ]
     }
