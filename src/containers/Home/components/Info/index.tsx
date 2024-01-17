@@ -7,7 +7,12 @@ const Info: FC<Props> = () => {
       <div className="w-full h-full flex justify-between items-center">
         <div className="w-full flex gap-5">
           <div className="avatar w-[122px] h-[122px] overflow-hidden rounded-full flex justify-center items-start">
-            <Image src="/images/avatar1.jpg" className="scale-125" width={98} />
+            <Image
+              src="/images/avatar1.jpg"
+              className="scale-125"
+              width={98}
+              alt="Avatar huydinh14"
+            />
           </div>
           <div className="w-auto flex flex-col items-start justify-center">
             <p className="font-bold text-2xl">DINH QUANG HUY</p>

@@ -10,7 +10,10 @@ const TeckStack: FC<Props> = () => {
         <div className="w-full h-1 bg-blue800 rounded-lg mt-1" />
         <div className="flex flex-wrap gap-2 items-center justify-start min-h-20 mt-5">
           {teckStack.map((item) => (
-            <div className="w-full flex flex-wrap justify-start items-center gap-3">
+            <div
+              key={item.id}
+              className="w-full flex flex-wrap justify-start items-center gap-3"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
