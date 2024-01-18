@@ -20,7 +20,9 @@ const Info: FC<Props> = () => {
           </div>
         </div>
         <div className="w-full info font-normal text-md flex flex-col gap-1.5 items-end text-backBlur">
-          <p className="text-backBlur dark:text-white cursor-pointer">Tháng 3 Năm 2001</p>
+          <p className="text-backBlur dark:text-white cursor-pointer">
+            Tháng 3 Năm 2001
+          </p>
           <Link
             isExternal
             href="tel:+84335293294"

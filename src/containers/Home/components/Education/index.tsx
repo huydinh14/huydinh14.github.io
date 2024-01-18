@@ -11,7 +11,7 @@ const Education: FC<Props> = () => {
             <p className="font-semibold text-md">
               Đại học Công nghiệp Thành phố Hồ Chí Minh
             </p>
-            <i className="font-normal">Tháng 09 2019 - Tháng 09 2023</i>
+            {/* <i className="font-normal">Tháng 09 2019 - Tháng 12 2023</i> */}
             <p className="font-normal">Kĩ thuật phần mềm | GPA: 7.7</p>
           </div>
         </div>

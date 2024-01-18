@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Dinh Quang Huy",
   description: "Curriculum Vitae Dinh Quang Huy",
-  icons: '/next.svg'
+  icons: '/svg/next.svg'
 };
 
 export default function RootLayout({
