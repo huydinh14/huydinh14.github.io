@@ -6,7 +6,7 @@ export default function Providers({ children }: { children: React.ReactNode }) {
   return (
     <>
       <NextUIProvider className="w-full h-full">
-        <NextThemesProvider attribute="class" defaultTheme="dark">
+        <NextThemesProvider attribute="class" defaultTheme="light">
           {children}
         </NextThemesProvider>
       </NextUIProvider>

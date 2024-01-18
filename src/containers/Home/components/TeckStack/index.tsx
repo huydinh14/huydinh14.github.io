@@ -30,7 +30,7 @@ const TeckStack: FC<Props> = () => {
                 </svg>
                 <p className="font-normal text-sm">{item.type}</p>
               </div>
-              <div className="w-3/4 flex flex-wrap justify-start items-center gap-2">
+              <div className="w-[85%] flex flex-wrap justify-start items-center gap-2">
                 {item.tech.map((x) => (
                   <Chip key={x.id} className="cursor-pointer">
                     {x.name}
