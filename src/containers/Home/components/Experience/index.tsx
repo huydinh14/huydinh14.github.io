@@ -18,14 +18,14 @@ const Experience: FC<Props> = () => {
               subtitle="Tháng 04 2022 - Tháng 05 2023"
               classNames={{ title: "font-medium" }}
               startContent={
-                <Image src="/svg/city.svg" className="dark:invert" />
+                <Image src="/svg/city.svg" className="dark:invert" alt="iconCity"/>
               }
             >
               <div className="w-full flex flex-col gap-2">
                 <p className="font-semibold">FullStack Developer</p>
                 <div className="w-full">
                   {responsibilities.map((item) => (
-                    <p>{item}</p>
+                    <p key={item}>{item}</p>
                   ))}
                 </div>
               </div>
@@ -37,14 +37,14 @@ const Experience: FC<Props> = () => {
               subtitle="Tháng 06 2023 - Tháng 2 2024"
               classNames={{ title: "font-medium" }}
               startContent={
-                <Image src="/svg/city.svg" className="dark:invert" />
+                <Image src="/svg/city.svg" className="dark:invert" alt="iconCity"/>
               }
             >
               <div className="w-full flex flex-col gap-2">
                 <p className="font-semibold">Full Stack Developer</p>
                 <div className="w-full">
                   {responsibilities.map((item) => (
-                    <p>{item}</p>
+                  <p key={item}>{item}</p>
                   ))}
                 </div>
               </div>
