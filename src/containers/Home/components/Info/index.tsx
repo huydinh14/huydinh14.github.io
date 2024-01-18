@@ -46,7 +46,7 @@ const Info: FC<Props> = () => {
           </Link>
           <Link
             isExternal
-            href="https://https://huydinh14.github.io/"
+            href="https://huydinh14.github.io/"
             className="text-backBlur dark:text-white"
           >
             CV: huydinh14.github.io
