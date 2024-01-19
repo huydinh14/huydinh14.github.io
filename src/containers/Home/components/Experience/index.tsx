@@ -1,7 +1,7 @@
 "use client";
-import { Accordion, AccordionItem, Chip, Image } from "@nextui-org/react";
+import { Accordion, AccordionItem, Chip, Image, Link } from "@nextui-org/react";
 import { FC } from "react";
-import { companyHistory } from "./hepler";
+import { companyHistory } from "./helper";
 
 const Experience: FC<Props> = () => {
   return (
@@ -17,7 +17,7 @@ const Experience: FC<Props> = () => {
                 aria-label={company.name}
                 title={company.name}
                 subtitle={company.timeWork}
-                classNames={{ title: "font-medium" }}
+                classNames={{ title: "font-bold", subtitle: "font-medium" }}
                 startContent={
                   <Image
                     src={company.image}
@@ -32,15 +32,22 @@ const Experience: FC<Props> = () => {
                   </p>
                   {company.data.map((act, index) => (
                     <div className="w-full" key={index}>
-                      <div className="w-full flex justify-start items-center gap-2">
-                        <Image
-                          src="svg/tag.svg"
-                          alt="Tag Project"
-                          className="dark:invert"
-                        />
-                        <p className="font-semibold text-md">
-                          Dự án: {act.name}
-                        </p>
+                      <div className="w-full flex justify-between items-center">
+                        <div className="w-full flex justify-start items-center gap-2">
+                          <Image
+                            src="svg/tag.svg"
+                            alt="Tag Project"
+                            className="dark:invert"
+                          />
+                          <p className="font-semibold text-md">
+                            Dự án: {act.name}
+                          </p>
+                        </div>
+                        <div className="w-full flex items-center justify-end">
+                          <Link isExternal href={act.link}>
+                            {act.link}
+                          </Link>
+                        </div>
                       </div>
                       <div className="w-full flex gap-2 justify-start items-start">
                         <p className="font-semibold underline min-w-max">

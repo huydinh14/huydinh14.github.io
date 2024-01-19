@@ -8,7 +8,7 @@ const Info: FC<Props> = () => {
         <div className="w-full flex gap-5">
           <div className="avatar w-[122px] h-[122px] overflow-hidden rounded-full flex justify-center items-start">
             <Image
-              src="/images/avatar1.jpg"
+              src="/images/avatar.jpg"
               className="scale-125"
               width={98}
               alt="Avatar huydinh14"
@@ -46,10 +46,10 @@ const Info: FC<Props> = () => {
           </Link>
           <Link
             isExternal
-            href="https://huydinh14.github.io/"
+            href="https://www.linkedin.com/in/huydinhse/"
             className="text-backBlur dark:text-white"
           >
-            CV: huydinh14.github.io
+            Linkedin: huydinhse
           </Link>
         </div>
       </div>

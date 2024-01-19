@@ -1,6 +1,6 @@
 import { Chip } from "@nextui-org/react";
 import { FC } from "react";
-import { teckStack } from "./hepler";
+import { teckStack } from "./helper";
 
 const TeckStack: FC<Props> = () => {
   return (

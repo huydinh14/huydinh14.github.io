@@ -1,12 +1,13 @@
-export interface companyType {
+export interface projectType {
     id: number,
     image: string,
     name: string,
     timeWork: string,
+    memberTotal: number,
     position: string,
+    linkYT: string,
+    linkGit: string,
     data: {
-        name: string,
-        link: string,
         desc: string,
         actions: string[],
         techStack: string[],

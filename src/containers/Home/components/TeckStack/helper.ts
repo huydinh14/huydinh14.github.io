@@ -91,11 +91,16 @@ export const teckStack: TechType[] = [
     },
     {
         id: "Git",
-        type: "Git",
+        type: "Git", 
         tech: [
             {
                 id: "1",
                 name: "Github",
+                isMain: true
+            },
+            {
+                id: "1",
+                name: "Gitflow",
                 isMain: true
             },
             {
@@ -116,7 +121,7 @@ export const teckStack: TechType[] = [
             },
             {
                 id: "2",
-                name: "Understanding Technical Documentation",
+                name: "English basic",
                 isMain: false
             }
         ]
