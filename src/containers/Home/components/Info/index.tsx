@@ -55,12 +55,15 @@ const Info: FC<Props> = () => {
       </div>
       <div className="w-full mt-8 text-justify animate-pulse">
         <p>
-          Tôi đang tìm kiếm vị trí Nhà phát triển web, nơi tôi có thể áp dụng
-          kiến thức và kinh nghiệm của mình với C#, .NET, và .NET Core trong
-          việc xử lý backend. Đồng thời, tôi có đam mê tìm hiểu và làm việc với
-          các công nghệ mới, đặc biệt là các JavaScript frameworks khác. Tôi tin
-          rằng sự đa dạng về kỹ năng này sẽ giúp tôi đóng góp mạnh mẽ vào dự án
-          và phát triển công nghệ của đội ngũ.
+          Tôi đang tìm kiếm cơ hội làm Nhà phát triển Full Stack, nơi tôi có thể
+          sử dụng kỹ năng đa ngôn ngữ lập trình của mình. Trong phần backend,
+          tôi có kinh nghiệm làm việc với C#, .NET, và .NET Core. Ở mặt trước,
+          tôi đã làm việc với nhiều công nghệ như HTML, CSS, JavaScript, và các
+          framework như ReactJs và NextJs. Tôi tin rằng khả năng làm việc cả hai
+          phía của ứng dụng sẽ giúp tôi đóng góp mạnh mẽ vào việc phát triển và
+          duy trì hệ thống. Đồng thời, sự linh hoạt này cũng giúp tôi nắm bắt và
+          áp dụng nhanh chóng các công nghệ mới, làm tăng khả năng thích ứng của
+          đội ngũ.
         </p>
       </div>
     </>
