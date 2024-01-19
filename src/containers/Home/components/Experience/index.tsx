@@ -20,25 +20,43 @@ const Experience: FC<Props> = () => {
                 classNames={{ title: "font-medium" }}
                 startContent={
                   <Image
-                    src="/svg/city.svg"
+                    src={company.image}
                     className="dark:invert"
                     alt="iconCity"
                   />
                 }
               >
                 <div className="w-[90%] mx-auto flex flex-col justify-center items-start gap-2">
-                  <p className="font-semibold text-lg">{company.position}</p>
+                  <p className="font-semibold text-lg first-letter:text-blue800 first-letter:text-[20px]">
+                    {company.position}
+                  </p>
                   {company.data.map((act, index) => (
                     <div className="w-full" key={index}>
                       <div className="w-full flex justify-start items-center gap-2">
-                        <Image src="svg/tag.svg" alt="Tag Project" className="dark:invert"/>
+                        <Image
+                          src="svg/tag.svg"
+                          alt="Tag Project"
+                          className="dark:invert"
+                        />
                         <p className="font-semibold text-md">
                           Dự án: {act.name}
                         </p>
                       </div>
-                      <p>{act.desc}</p>
+                      <div className="w-full flex gap-2 justify-start items-start">
+                        <p className="font-semibold underline min-w-max">
+                          Mô tả:{" "}
+                        </p>
+                        <p>{act.desc}</p>
+                      </div>
+                      <p className="font-semibold underline">Trách nhiệm:</p>
                       {act.actions.map((item, index) => (
-                        <p key={index}>{item}</p>
+                        <div
+                          key={index}
+                          className="w-full flex items-start justify-start gap-2"
+                        >
+                          <p>- </p>
+                          <p>{item}</p>
+                        </div>
                       ))}
                       <div
                         key={index}

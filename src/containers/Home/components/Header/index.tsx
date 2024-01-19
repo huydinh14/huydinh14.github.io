@@ -1,5 +1,11 @@
 "use client";
-import { Switch, VisuallyHidden, useSwitch } from "@nextui-org/react";
+import {
+  Switch,
+  VisuallyHidden,
+  useSwitch,
+  Image,
+  cn,
+} from "@nextui-org/react";
 import { useTheme } from "next-themes";
 import { Component, useEffect, useState } from "react";
 
@@ -58,6 +64,7 @@ const Header: React.FC<Props> = (props) => {
         isSelected={isSelectedMode}
         onChange={onChangeDarkMode}
         color="warning"
+        classNames={{ wrapper: "bg-blueDark" }}
         startContent={
           <svg
             aria-hidden="true"

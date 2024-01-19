@@ -50,11 +50,9 @@ const config: Config = {
       blueSky: '#0B234D',
       blueSky200: '#D3DFED',
       blueSky100: '#E4EFFA',
-      blueDark: '#131726',
+      blueDark: '#009DCE',
       blue500: '#010B74',
-      blue800: '#3399ff',
-      blurSlider: 'rgb(11 35 65 / 80%)',
-      borderColor: 'rgba(0, 0, 0, .2)',
+      blue800: '#3399ff'
     },
     aspectRatio: {
       '41/13': '41 / 13',

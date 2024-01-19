@@ -79,7 +79,7 @@ export const teckStack: TechType[] = [
         tech: [
             {
                 id: "1",
-                name: "MSSQL",
+                name: "SQL SERVER",
                 isMain: true
             },
             {
@@ -90,7 +90,7 @@ export const teckStack: TechType[] = [
         ]
     },
     {
-        id: "DB",
+        id: "Git",
         type: "Git",
         tech: [
             {
@@ -101,6 +101,22 @@ export const teckStack: TechType[] = [
             {
                 id: "2",
                 name: "Bitbucket",
+                isMain: false
+            }
+        ]
+    },
+    {
+        id: "Other",
+        type: "Other",
+        tech: [
+            {
+                id: "1",
+                name: "Agile Scrum",
+                isMain: true
+            },
+            {
+                id: "2",
+                name: "Understanding Technical Documentation",
                 isMain: false
             }
         ]
