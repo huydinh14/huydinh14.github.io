@@ -1,12 +1,15 @@
+"use client";
 import { Chip } from "@nextui-org/react";
 import { FC } from "react";
 import { teckStack } from "./helper";
+import { useTrans } from "@/services/useTrans";
 
 const TeckStack: FC<Props> = () => {
+  const trans = useTrans();
   return (
     <>
       <div className="w-full h-full mt-5">
-        <p className="text-lg font-bold">KỸ NĂNG</p>
+        <p className="text-lg font-bold">{trans.techStack}</p>
         <div className="w-full h-1 bg-blue800 rounded-lg mt-1" />
         <div className="flex flex-wrap gap-4 items-center justify-start min-h-20 mt-5">
           {teckStack.map((item) => (

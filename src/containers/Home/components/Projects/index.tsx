@@ -2,13 +2,14 @@
 import { Accordion, AccordionItem, Chip, Image, Link } from "@nextui-org/react";
 import { FC } from "react";
 import { projects } from "./helper";
-
+import { useTrans } from "@/services/useTrans";
 const Projects: FC<Props> = () => {
+  const trans = useTrans();
   return (
     <>
       <div className="w-full h-full">
         <div className="w-full h-full mt-5">
-          <p className="text-lg font-bold">DỰ ÁN CÁ NHÂN</p>
+          <p className="text-lg font-bold">{trans.project}</p>
           <div className="w-full h-1 bg-blue800 rounded-lg mt-1" />
           <Accordion className="mt-5" variant="bordered">
             {projects.map((company) => (
@@ -33,7 +34,7 @@ const Projects: FC<Props> = () => {
                     </p>
                     <div className="flex items-center justify-end gap-2">
                       <Link isExternal href={company.linkYT}>
-                      {company.linkYT === "" ? "" : "Video"}
+                        {company.linkYT === "" ? "" : "Video"}
                       </Link>
                       <Link isExternal href={company.linkGit}>
                         {company.linkGit === "" ? "" : "Github"}

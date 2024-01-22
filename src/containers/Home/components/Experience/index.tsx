@@ -1,17 +1,19 @@
 "use client";
 import { Accordion, AccordionItem, Chip, Image, Link } from "@nextui-org/react";
 import { FC } from "react";
-import { companyHistory } from "./helper";
+import { useTrans } from "@/services/useTrans";
 
 const Experience: FC<Props> = () => {
+  const trans = useTrans();
+  const conpanyHistory = trans.expCompany;
   return (
     <>
       <div className="w-full h-full">
         <div className="w-full h-full mt-5">
-          <p className="text-lg font-bold">KINH NGHIỆM</p>
+          <p className="text-lg font-bold">{trans.experience}</p>
           <div className="w-full h-1 bg-blue800 rounded-lg mt-1" />
           <Accordion className="mt-5" variant="bordered">
-            {companyHistory.map((company) => (
+            {conpanyHistory.map((company) => (
               <AccordionItem
                 key={company.id}
                 aria-label={company.name}

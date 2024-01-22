@@ -1,13 +1,9 @@
 "use client";
-import {
-  Switch,
-  VisuallyHidden,
-  useSwitch,
-  Image,
-  cn,
-} from "@nextui-org/react";
+import { Switch, VisuallyHidden, useSwitch } from "@nextui-org/react";
 import { useTheme } from "next-themes";
-import { Component, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import { setTrans } from "@/services/useTrans";
+import { useRouter } from "next/navigation";
 
 const Header: React.FC<Props> = (props) => {
   const [isSelectedMode, setIsSelectedMode] = useState(true);
@@ -20,6 +16,7 @@ const Header: React.FC<Props> = (props) => {
     getInputProps,
     getWrapperProps,
   } = useSwitch(props);
+  const route = useRouter();
 
   const onChangeDarkMode = (event: React.ChangeEvent<HTMLInputElement>) => {
     const status = event.target.checked;
@@ -30,6 +27,18 @@ const Header: React.FC<Props> = (props) => {
       setTheme("dark");
     }
   };
+
+  useEffect(() => {
+    const onChangeTranslate = (isSelected: boolean) => {
+      if (isSelected) {
+        setTrans("vi");
+      } else {
+        setTrans("en");
+      }
+      route.refresh();
+    };
+    onChangeTranslate(isSelected ?? false);
+  }, [isSelected]);
 
   useEffect(() => {
     const getTheme = localStorage.getItem("theme");

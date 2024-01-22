@@ -1,7 +1,10 @@
+"use client";
 import { FC } from "react";
 import { Image, Link } from "@nextui-org/react";
+import { useTrans } from "@/services/useTrans";
 
 const Info: FC<Props> = () => {
+  const trans = useTrans();
   return (
     <>
       <div className="w-full h-full flex justify-between items-center">
@@ -21,7 +24,7 @@ const Info: FC<Props> = () => {
         </div>
         <div className="w-full info font-normal text-md flex flex-col gap-1.5 items-end text-backBlur">
           <p className="text-backBlur dark:text-white cursor-pointer">
-            Tháng 3 Năm 2001
+            {trans.info.birthDate}
           </p>
           <Link
             isExternal
@@ -53,18 +56,8 @@ const Info: FC<Props> = () => {
           </Link>
         </div>
       </div>
-      <div className="w-full mt-8 text-justify animate-pulse">
-        <p>
-          Tôi đang tìm kiếm cơ hội làm Nhà phát triển Full Stack, nơi tôi có thể
-          sử dụng kỹ năng ngôn ngữ lập trình của mình. Trong phần backend, tôi
-          có kinh nghiệm làm việc với C#, .NET, và .NET Core. Tôi đã làm việc
-          với nhiều công nghệ như HTML, CSS, JavaScript, và các framework như
-          ReactJs và NextJs. Tôi tin rằng khả năng làm việc cả hai phía của ứng
-          dụng sẽ giúp tôi đóng góp mạnh mẽ vào việc phát triển và duy trì hệ
-          thống. Đồng thời, sự linh hoạt này cũng giúp tôi nắm bắt và áp dụng
-          nhanh chóng các công nghệ mới, làm tăng khả năng thích ứng của đội
-          ngũ.
-        </p>
+      <div className="w-full mt-8 text-justify">
+        <p>{trans.info.profile}</p>
       </div>
     </>
   );
