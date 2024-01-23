@@ -11,7 +11,7 @@ import {
 const Home: FC<Props> = () => {
   return (
     <>
-      <div className="w-full min-h-screen py-2 px-12">
+      <div className="w-full min-h-screen py-2 px-6 sm:px-12">
         <Header />
         <Info />
         <TeckStack />

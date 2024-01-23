@@ -17,12 +17,12 @@ const TeckStack: FC<Props> = () => {
               key={item.id}
               className="w-full h-full flex justify-start items-start gap-3"
             >
-              <div className="w-[15%] flex justify-start items-center">
+              <div className="w-[30%] sm:w-[15%] flex justify-start items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
-                  viewBox="0 0 256 256"
+                  viewBox="0 0 256 256" 
                 >
                   <path
                     fill="currentColor"

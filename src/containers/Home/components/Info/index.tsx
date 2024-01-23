@@ -7,8 +7,8 @@ const Info: FC<Props> = () => {
   const trans = useTrans();
   return (
     <>
-      <div className="w-full h-full flex justify-between items-center">
-        <div className="w-full flex gap-5">
+      <div className="w-full h-full flex flex-col justify-center sm:flex-row sm:justify-between items-center">
+        <div className="w-full flex gap-5 justify-center sm:justify-start">
           <div className="avatar w-[122px] h-[122px] overflow-hidden rounded-full flex justify-center items-start">
             <Image
               src="/images/avatar.jpg"
@@ -22,7 +22,7 @@ const Info: FC<Props> = () => {
             <p className="font-normal text-md">FULL STACK DEVELOPER</p>
           </div>
         </div>
-        <div className="w-full info font-normal text-md flex flex-col gap-1.5 items-end text-backBlur">
+        <div className="w-full info font-normal text-md flex flex-col gap-1.5 items-center mt-5 sm:mt-0 sm:items-end text-backBlur">
           <p className="text-backBlur dark:text-white cursor-pointer">
             {trans.info.birthDate}
           </p>

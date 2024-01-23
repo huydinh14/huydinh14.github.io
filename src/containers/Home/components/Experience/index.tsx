@@ -19,10 +19,10 @@ const Experience: FC<Props> = () => {
                 aria-label={company.name}
                 title={company.name}
                 subtitle={
-                  <p className="flex justify-between">
+                  <div className="flex justify-between">
                     <p>{company.timeWork}</p>
                     <p>{company.timeExp}</p>
-                  </p>
+                  </div>
                 }
                 classNames={{ title: "font-bold", subtitle: "font-medium" }}
                 startContent={
@@ -39,24 +39,34 @@ const Experience: FC<Props> = () => {
                   </p>
                   {company.data.map((act, index) => (
                     <div className="w-full" key={index}>
-                      <div className="w-full flex justify-between items-center">
+                      <div
+                        className={`w-full flex items-center ${
+                          act.link !== ""
+                            ? "flex-col sm:flex-row justify-start"
+                            : "flex-row justify-between"
+                        }`}
+                      >
                         <div className="w-full flex justify-start items-center gap-2">
                           <Image
                             src="svg/tag.svg"
                             alt="Tag Project"
                             className="dark:invert"
                           />
-                          <p className="font-semibold text-md">
+                          <p className="w-full font-semibold text-md">
                             {trans.projectName} {act.name}
                           </p>
                         </div>
-                        <div className="w-full flex items-center justify-end">
+                        <div
+                          className={`w-full flex items-center justify-start sm:justify-end ${
+                            act.link === "" ? "hidden" : "justify-start"
+                          }`}
+                        >
                           <Link isExternal href={act.link}>
                             {act.link}
                           </Link>
                         </div>
                       </div>
-                      <div className="w-full flex gap-2 justify-start items-start">
+                      <div className="w-full sm:flex gap-2 justify-start items-start">
                         <p className="font-semibold underline min-w-max">
                           {trans.desc}
                         </p>
@@ -76,12 +86,14 @@ const Experience: FC<Props> = () => {
                       ))}
                       <div
                         key={index}
-                        className="w-full h-full flex justify-start items-start gap-3 my-4"
+                        className="w-full h-full sm:flex justify-start items-start gap-3 my-4"
                       >
-                        <div className="w-[15%] flex justify-start items-center">
-                          <p className="font-semibold text-md">{trans.tech}</p>
+                        <div className="w-full sm:w-[15%] flex justify-start items-center">
+                          <p className="w-full font-semibold text-md mb-2 sm:mb-0">
+                            {trans.tech}
+                          </p>
                         </div>
-                        <div className="w-[85%] flex flex-wrap justify-start items-center gap-2">
+                        <div className="w-full sm:w-[85%] flex flex-wrap justify-start items-center gap-2">
                           {act.techStack.map((item, index) => (
                             <Chip
                               className="cursor-pointer"

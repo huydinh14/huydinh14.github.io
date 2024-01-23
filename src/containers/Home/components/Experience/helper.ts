@@ -124,7 +124,7 @@ export const companyHistoryEN: companyType[] = [
         image: 'svg/city.svg',
         timeWork: "June 2023 - February 2024",
         timeExp: "7 months",
-        position: "Full Stack D,eveloper",
+        position: "Full Stack Developer",
         data: [
             {
                 name: "ACCNET ERP",

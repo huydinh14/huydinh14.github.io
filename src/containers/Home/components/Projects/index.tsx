@@ -1,7 +1,6 @@
 "use client";
 import { Accordion, AccordionItem, Chip, Image, Link } from "@nextui-org/react";
 import { FC } from "react";
-import { projectsVI, projectsEN } from "./helper";
 import { useTrans } from "@/services/useTrans";
 const Projects: FC<Props> = () => {
   const trans = useTrans();
@@ -48,11 +47,11 @@ const Projects: FC<Props> = () => {
                   </p>
                   {company.data.map((act, index) => (
                     <div className="w-full" key={index}>
-                      <div className="w-full flex gap-2 justify-start items-start">
+                      <div className="w-full sm:flex gap-2 justify-start items-start">
                         <p className="font-semibold underline min-w-max">
                           {trans.desc}
                         </p>
-                        <p>{act.desc}</p>
+                        <p className="text-justify">{act.desc}</p>
                       </div>
                       <p className="font-semibold underline">
                         {trans.responsibility}
@@ -68,12 +67,14 @@ const Projects: FC<Props> = () => {
                       ))}
                       <div
                         key={index}
-                        className="w-full h-full flex justify-start items-start gap-3 my-4"
+                        className="w-full h-full sm:flex justify-start items-start gap-3 my-4"
                       >
-                        <div className="w-[15%] flex justify-start items-center">
-                          <p className="font-semibold text-md">{trans.tech}</p>
+                        <div className="w-full sm:w-[15%] flex justify-start items-center">
+                          <p className="w-full font-semibold text-md mb-2 sm:mb-0">
+                            {trans.tech}
+                          </p>
                         </div>
-                        <div className="w-[85%] flex flex-wrap justify-start items-center gap-2">
+                        <div className="w-full sm:w-[85%] flex flex-wrap justify-start items-center gap-2">
                           {act.techStack.map((item, index) => (
                             <Chip
                               className="cursor-pointer"
