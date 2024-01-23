@@ -19,7 +19,7 @@ const Experience: FC<Props> = () => {
                 aria-label={company.name}
                 title={company.name}
                 subtitle={
-                  <div className="flex justify-between">
+                  <div className="sm:flex justify-between">
                     <p>{company.timeWork}</p>
                     <p>{company.timeExp}</p>
                   </div>

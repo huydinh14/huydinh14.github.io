@@ -19,3 +19,7 @@ export const setTrans = (lang: 'vi' | 'en') => {
   statusLang = lang;
   localStorage.setItem('lang', lang);
 };
+
+export const getDarkMode = () => {
+  
+}

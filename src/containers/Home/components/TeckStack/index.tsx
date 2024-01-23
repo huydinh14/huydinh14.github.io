@@ -35,7 +35,7 @@ const TeckStack: FC<Props> = () => {
               </div>
               <div className="w-[85%] flex flex-wrap justify-start items-center gap-2">
                 {item.tech.map((x) => (
-                  <Chip key={x.id} className="cursor-pointer">
+                  <Chip key={x.name} className="cursor-pointer">
                     {x.name}
                   </Chip>
                 ))}
