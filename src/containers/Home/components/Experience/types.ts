@@ -3,6 +3,7 @@ export interface companyType {
     image: string,
     name: string,
     timeWork: string,
+    timeExp: string,
     position: string,
     data: {
         name: string,

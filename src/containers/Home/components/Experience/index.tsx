@@ -18,7 +18,12 @@ const Experience: FC<Props> = () => {
                 key={company.id}
                 aria-label={company.name}
                 title={company.name}
-                subtitle={company.timeWork}
+                subtitle={
+                  <p className="flex justify-between">
+                    <p>{company.timeWork}</p>
+                    <p>{company.timeExp}</p>
+                  </p>
+                }
                 classNames={{ title: "font-bold", subtitle: "font-medium" }}
                 startContent={
                   <Image
@@ -42,7 +47,7 @@ const Experience: FC<Props> = () => {
                             className="dark:invert"
                           />
                           <p className="font-semibold text-md">
-                            Dự án: {act.name}
+                            {trans.projectName} {act.name}
                           </p>
                         </div>
                         <div className="w-full flex items-center justify-end">
@@ -53,11 +58,13 @@ const Experience: FC<Props> = () => {
                       </div>
                       <div className="w-full flex gap-2 justify-start items-start">
                         <p className="font-semibold underline min-w-max">
-                          Mô tả:{" "}
+                          {trans.desc}
                         </p>
                         <p>{act.desc}</p>
                       </div>
-                      <p className="font-semibold underline">Trách nhiệm:</p>
+                      <p className="font-semibold underline">
+                        {trans.responsibility}
+                      </p>
                       {act.actions.map((item, index) => (
                         <div
                           key={index}
@@ -72,7 +79,7 @@ const Experience: FC<Props> = () => {
                         className="w-full h-full flex justify-start items-start gap-3 my-4"
                       >
                         <div className="w-[15%] flex justify-start items-center">
-                          <p className="font-semibold text-md">Công nghệ :</p>
+                          <p className="font-semibold text-md">{trans.tech}</p>
                         </div>
                         <div className="w-[85%] flex flex-wrap justify-start items-center gap-2">
                           {act.techStack.map((item, index) => (

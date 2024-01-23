@@ -6,6 +6,7 @@ export const companyHistoryVI: companyType[] = [
         name: "Lạc Việt Computing Corporation",
         image: 'svg/city.svg',
         timeWork: "Tháng 06 2023 - Tháng 2 2024",
+        timeExp: "7 tháng",
         position: "Full Stack Developer",
         data: [
             {
@@ -52,6 +53,7 @@ export const companyHistoryVI: companyType[] = [
         name: "Emage Development",
         image: 'svg/city.svg',
         timeWork: "Tháng 04 2022 - Tháng 05 2023",
+        timeExp: "12 tháng",
         position: "Software Developer",
         data: [
             {
@@ -93,6 +95,7 @@ export const companyHistoryVI: companyType[] = [
         image: 'svg/laptop.svg',
         name: "Freelancer",
         timeWork: "",
+        timeExp: "",
         position: "Software Developer",
         data: [
             {
@@ -120,7 +123,8 @@ export const companyHistoryEN: companyType[] = [
         name: "Lac Viet Computing Corporation",
         image: 'svg/city.svg',
         timeWork: "June 2023 - February 2024",
-        position: "Full Stack Developer",
+        timeExp: "7 months",
+        position: "Full Stack D,eveloper",
         data: [
             {
                 name: "ACCNET ERP",
@@ -166,6 +170,7 @@ export const companyHistoryEN: companyType[] = [
         name: "Emage Development",
         image: 'svg/city.svg',
         timeWork: "April 2022 - May 2023",
+        timeExp: "12 months",
         position: "Software Developer",
         data: [
             {
@@ -207,6 +212,7 @@ export const companyHistoryEN: companyType[] = [
         image: 'svg/laptop.svg',
         name: "Freelancer",
         timeWork: "",
+        timeExp: "",
         position: "Software Developer",
         data: [
             {

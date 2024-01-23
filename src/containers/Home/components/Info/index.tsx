@@ -18,7 +18,7 @@ const Info: FC<Props> = () => {
             />
           </div>
           <div className="w-auto flex flex-col items-start justify-center">
-            <p className="font-bold text-2xl">DINH QUANG HUY</p>
+            <p className="font-bold text-2xl">{trans.info.yourName}</p>
             <p className="font-normal text-md">FULL STACK DEVELOPER</p>
           </div>
         </div>
@@ -31,7 +31,7 @@ const Info: FC<Props> = () => {
             href="tel:+84335293294"
             className="text-backBlur dark:text-white"
           >
-            0335 293 294
+            {trans.info.phone}
           </Link>
           <Link
             isExternal

@@ -1,6 +1,6 @@
 import { projectType } from "./types";
 
-export const projects: projectType[] = [
+export const projectsVI: projectType[] = [
     {
         id: 1,
         name: "MediHealth",
@@ -36,7 +36,7 @@ export const projects: projectType[] = [
         id: 2,
         name: "Hallo Chat",
         image: 'svg/project.svg',
-        timeWork: "4 months",
+        timeWork: "4 tháng",
         memberTotal: 1,
         position: "Full Stack Developer",
         linkYT: "",
@@ -73,6 +73,88 @@ export const projects: projectType[] = [
                 actions: [
                     "Thực hiện các chức năng chính của một game rắn săn mồi",
                     "Tối ưu và thiết kế giao diện game"
+                ],
+                techStack: [
+                    "C/C++"
+                ]
+            }
+        ]
+    },
+]
+
+export const projectsEN: projectType[] = [
+    {
+        id: 1,
+        name: "MediHealth",
+        image: 'svg/project.svg',
+        timeWork: "3 months",
+        memberTotal: 2,
+        position: "Full Stack Developer",
+        linkYT: "https://www.youtube.com/watch?v=NKFldOtwigo&t=1s",
+        linkGit: "",
+        data: [
+            {
+                desc: "Heart rate monitoring project on web and mobile, self-designed IOT device, warning when heart rate suddenly increases or decreases, using AI to promptly predict the patient's illness.",
+                actions: [
+                    "System analysis and design",
+                    "Perform configuration and develop functions according to documentation",
+                    "Deploy CI/CD with Azure DevOps",
+                    "Design and implementation of wearable IOT heart rate monitoring device",
+                    "Technical documentation, user manual"
+                ],
+                techStack: [
+                    "ReactJS",
+                    "NodeJS",
+                    "MongoDB",
+                    "Ant Design",
+                    "SQL SERVER",
+                    "IOT",
+                    "Azure DevOps"
+                ]
+            }
+        ]
+    },
+    {
+        id: 2,
+        name: "Hallo Chat",
+        image: 'svg/project.svg',
+        timeWork: "4 months",
+        memberTotal: 1,
+        position: "Full Stack Developer",
+        linkYT: "",
+        linkGit: "",
+        data: [
+            {
+                desc: "Zalo Web clone project, including features such as single chat, creating group chat, group chat, sending stickers, GIFs, sending photos and videos,...",
+                actions: [
+                    "Perform configuration and develop functions according to Zalo web",
+                    "Technical documentation, user manual"
+                ],
+                techStack: [
+                    "ReactJS",
+                    "NodeJS",
+                    "SocketIO",
+                    "Ant Design",
+                    "MongoDB"
+                ]
+            }
+        ]
+    },
+    {
+        id: 3,
+        name: "Snake",
+        image: 'svg/project.svg',
+        timeWork: "15 days",
+        memberTotal: 1,
+        position: "Software Developer",
+        linkYT: "https://www.youtube.com/watch?v=XHxk-CwbUmA",
+        linkGit: "",
+        data: [
+            {
+                desc: "One of the childhood games, snake hunting.",
+                actions: [
+                    "Performs the main functions of a snake hunting game",
+                    "Optimize and design game interface"
                 ],
                 techStack: [
                     "C/C++"

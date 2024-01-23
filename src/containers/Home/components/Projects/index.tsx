@@ -1,10 +1,11 @@
 "use client";
 import { Accordion, AccordionItem, Chip, Image, Link } from "@nextui-org/react";
 import { FC } from "react";
-import { projects } from "./helper";
+import { projectsVI, projectsEN } from "./helper";
 import { useTrans } from "@/services/useTrans";
 const Projects: FC<Props> = () => {
   const trans = useTrans();
+  const projects = trans.projectMySefl;
   return (
     <>
       <div className="w-full h-full">
@@ -43,17 +44,19 @@ const Projects: FC<Props> = () => {
                   </div>
 
                   <p className="font-semibold">
-                    Thành viên: {company.memberTotal}
+                    {trans.member} {company.memberTotal}
                   </p>
                   {company.data.map((act, index) => (
                     <div className="w-full" key={index}>
                       <div className="w-full flex gap-2 justify-start items-start">
                         <p className="font-semibold underline min-w-max">
-                          Mô tả:{" "}
+                          {trans.desc}
                         </p>
                         <p>{act.desc}</p>
                       </div>
-                      <p className="font-semibold underline">Trách nhiệm:</p>
+                      <p className="font-semibold underline">
+                        {trans.responsibility}
+                      </p>
                       {act.actions.map((item, index) => (
                         <div
                           key={index}
@@ -68,7 +71,7 @@ const Projects: FC<Props> = () => {
                         className="w-full h-full flex justify-start items-start gap-3 my-4"
                       >
                         <div className="w-[15%] flex justify-start items-center">
-                          <p className="font-semibold text-md">Công nghệ :</p>
+                          <p className="font-semibold text-md">{trans.tech}</p>
                         </div>
                         <div className="w-[85%] flex flex-wrap justify-start items-center gap-2">
                           {act.techStack.map((item, index) => (
