@@ -14,6 +14,7 @@ export default {
         school: "Industrial University of Ho Chi Minh City",
         speGPA: "Software Engineer | GPA: 7.7"
     },
+    other: "Orther",
     experience: "EXPERIENCE",
     project: "PROJECTS",
     projectName: "Project Name:",

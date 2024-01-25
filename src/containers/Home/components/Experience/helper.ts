@@ -14,8 +14,9 @@ export const companyHistoryVI: companyType[] = [
                 link: "",
                 desc: "Dự án làm về phần mềm kế toán, quản lý trong doanh nghiệp.",
                 actions: [
-                    "Phát triển các tính năng mới theo các chức năng yêu cầu của bên khách hàng",
                     "Thực hiện cấu hình và kết nối bankhub, thanh toán với ngân hàng điện tử giữa phần mềm với MB, OCB và ACB",
+                    "Chức năng tự động đọc và lấy dữ liệu hóa đơn điện tử từ Gmail và Outlook, đồng bộ với phần mềm AccNet",
+                    "Phát triển các tính năng mới theo các chức năng yêu cầu của bên khách hàng",
                     "Thực hiện sửa lỗi của các khách hàng",
                     "Tài liệu hướng dẫn kỹ thuật, hướng dẫn sử dụng"
                 ],
@@ -131,8 +132,9 @@ export const companyHistoryEN: companyType[] = [
                 link: "",
                 desc: "The project is about accounting and management software in businesses.",
                 actions: [
-                    "Develop new features according to customer requirements",
                     "Perform configuration and connection of bankhub, payment with electronic banking between software and MB, OCB and ACB",
+                    "Function to automatically read and retrieve electronic invoice data from Gmail and Outlook, synchronized with AccNet software",
+                    "Develop new features according to customer requirements",
                     "Implement customer error correction",
                     "Technical documentation, user manual"
                 ],

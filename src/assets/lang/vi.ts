@@ -14,6 +14,7 @@ export default {
         school: "Đại học Công nghiệp Thành phố Hồ Chí Minh",
         speGPA: "Kĩ thuật phần mềm | GPA: 7.7"
     },
+    other: "Khác",
     experience: "KINH NGHIỆM",
     project: "DỰ ÁN CÁ NHÂN",
     projectName: "Dự án:",
