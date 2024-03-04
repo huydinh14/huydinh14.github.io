@@ -106,6 +106,7 @@ export const companyHistoryVI: companyType[] = [
                 actions: [
                     "Phát triển giao diện theo design Figma được cung cấp",
                     "Tham gia xây dựng trang quảng trị quản lý sản phẩm của website",
+                    "Responsive web đáp ứng trên thiết bị di động theo thiết kế trên Figma",
                     "Thảo luận và tham gia sửa lỗi dự án"
                 ],
                 techStack: [
@@ -222,9 +223,11 @@ export const companyHistoryEN: companyType[] = [
             {
                 name: "Solid Safe",
                 desc: "Website selling safes from a Korean company",
-                link: "https://solidsafe.tuanit.vn",
+                link: "https://ketsatthongminh.tuanit.vn/",
                 actions: [
                     "Develop the interface according to the provided Figma design",
+                    "Participate in building the website's product management advertising page",
+                    "Responsive website on mobile according to Figma",
                     "Discuss and participate in fixing project errors"
                 ],
                 techStack: [
@@ -232,6 +235,7 @@ export const companyHistoryEN: companyType[] = [
                     "Tailwind CSS",
                     "TypeScript",
                     "CI/CD",
+                    "Agile Scrum"
                 ]
             }
         ]
