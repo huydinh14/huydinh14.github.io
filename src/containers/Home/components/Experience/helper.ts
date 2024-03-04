@@ -102,9 +102,10 @@ export const companyHistoryVI: companyType[] = [
             {
                 name: "Solid Safe",
                 desc: "Website bán két sắt từ một công ty của Hàn Quốc",
-                link: "https://solidsafe.tuanit.vn",
+                link: "https://ketsatthongminh.tuanit.vn/",
                 actions: [
                     "Phát triển giao diện theo design Figma được cung cấp",
+                    "Tham gia xây dựng trang quảng trị quản lý sản phẩm của website",
                     "Thảo luận và tham gia sửa lỗi dự án"
                 ],
                 techStack: [
@@ -112,6 +113,7 @@ export const companyHistoryVI: companyType[] = [
                     "Tailwind CSS",
                     "TypeScript",
                     "CI/CD",
+                    "Agile Scrum"
                 ]
             }
         ]
